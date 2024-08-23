@@ -1,17 +1,20 @@
+
 #include <stdio.h>
 
 int main()
 {
-    float celsius;
-    float fahrenheit; 
+    float lado;
+    float area;
+    float dobro;
     
+    printf("Digite o comprimento do lado do quadrado: ");
+    scanf("%f", &lado);
     
-    printf("Digite a temperatura em graus celsius: ");
-    scanf("%f", &celsius);
+    area = lado * lado;
     
-    fahrenheit = (celsius * 9 / 5) + 32;
+    dobro = 2 * area;
     
-    printf(" A temperatura convertida em fahrenheit é: %.2f\n", fahrenheit);
+    printf("O dobro da area do quadrado e: %.2f\n", dobro);
 
     return 0;
 }
